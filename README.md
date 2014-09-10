@@ -1,4 +1,3 @@
-BLESerialSample
+DigitalSax
 ===============
-
-iOSでBLESerialを使うときのサンプルコード
+デジタルな笛みたいな
