@@ -18,6 +18,7 @@ static BLESerialManager *manager = nil;
 @end
 
 @implementation BLESerialManager
+@synthesize delegate;
 
 + (BLESerialManager *) sharedManager{
     if (manager == nil) {
@@ -56,8 +57,10 @@ static BLESerialManager *manager = nil;
 //            NSLog(@"Receive value=%@",characteristic.value);
             uint8_t*	buf = (uint8_t*)[characteristic.value bytes]; //bufに結果が入る
             //_textField.text = [NSString stringWithFormat:@"%d", buf[0]];
-            NSLog(@"d -> i : %s", buf);
-    
+            if ([self.delegate respondsToSelector:@selector(onReceiveData:)]) {
+                [self.delegate onReceiveData:[NSString stringWithUTF8String:(char *)buf]];
+            }
+             
 			return;
 		}
         

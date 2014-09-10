@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLESerialManager.h"
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController<BLESerialManagerDelegate>{
     
 }
 @property (weak, nonatomic) IBOutlet UIButton *connectBtn;

@@ -12,6 +12,12 @@
 #define UUID_RX                             @"569a2001-b87f-490c-92cb-11ba5ea5167c" //RX
 #define UUID_TX								@"569a2000-b87f-490c-92cb-11ba5ea5167c" //TX
 
+@protocol BLESerialManagerDelegate <NSObject>
+
+- (void) onReceiveData:(NSString *)data;
+
+@end
+
 @interface BLESerialManager : NSObject
 
 + (BLESerialManager *) sharedManager;
@@ -20,5 +26,7 @@
 - (void) disconnect;
 - (void) sendChar:(unsigned char) c;
 - (void) sendStr:(NSString *) c;
+
+@property (nonatomic,assign) id<BLESerialManagerDelegate> delegate;
 
 @end

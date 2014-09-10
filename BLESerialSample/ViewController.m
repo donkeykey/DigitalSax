@@ -10,6 +10,7 @@
 #import "BLESerialManager.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIView *myview;
 
 @end
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [[BLESerialManager sharedManager] initBLE];
+    [BLESerialManager sharedManager].delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +39,15 @@
 
 - (IBAction)onTouchSendBtn:(id)sender {
     [[BLESerialManager sharedManager] sendStr:[NSString stringWithFormat:@"HOGE"]];
+}
+
+- (void) onReceiveData:(NSString *)data {
+    if ( [data intValue] > 200 ) {
+        NSLog(@"on");
+        self.myview.backgroundColor = [UIColor redColor];
+    } else {
+        self.myview.backgroundColor = [UIColor whiteColor];
+    }
 }
 
 @end
