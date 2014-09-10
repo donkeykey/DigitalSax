@@ -36,23 +36,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4206A6F319BDE99A004399DE /* BLESerialSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLESerialSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4206A6F319BDE99A004399DE /* DigitalSax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalSax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4206A6F619BDE99A004399DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4206A6F819BDE99A004399DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4206A6FA19BDE99A004399DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4206A6FE19BDE99A004399DE /* BLESerialSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLESerialSample-Info.plist"; sourceTree = "<group>"; };
+		4206A6FE19BDE99A004399DE /* DigitalSax-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalSax-Info.plist"; sourceTree = "<group>"; };
 		4206A70019BDE99A004399DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4206A70219BDE99A004399DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4206A70419BDE99A004399DE /* BLESerialSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLESerialSample-Prefix.pch"; sourceTree = "<group>"; };
+		4206A70419BDE99A004399DE /* DigitalSax-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalSax-Prefix.pch"; sourceTree = "<group>"; };
 		4206A70519BDE99A004399DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4206A70619BDE99A004399DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4206A70919BDE99A004399DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4206A70B19BDE99A004399DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4206A70C19BDE99A004399DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4206A70E19BDE99A004399DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4206A71419BDE99A004399DE /* BLESerialSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLESerialSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4206A71419BDE99A004399DE /* DigitalSaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalSaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4206A71519BDE99A004399DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4206A71D19BDE99A004399DE /* BLESerialSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BLESerialSampleTests-Info.plist"; sourceTree = "<group>"; };
+		4206A71D19BDE99A004399DE /* DigitalSaxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalSaxTests-Info.plist"; sourceTree = "<group>"; };
 		4206A71F19BDE99A004399DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4206A72119BDE99A004399DE /* BLESerialSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLESerialSampleTests.m; sourceTree = "<group>"; };
 		42F5F55B19BE08360008BE06 /* BLESerialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLESerialManager.m; path = BLESerialSample/BLESerialManager.m; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				42F5F56119BE09260008BE06 /* BLELibraly */,
-				4206A6FC19BDE99A004399DE /* BLESerialSample */,
-				4206A71B19BDE99A004399DE /* BLESerialSampleTests */,
+				4206A6FC19BDE99A004399DE /* DigitalSax */,
+				4206A71B19BDE99A004399DE /* DigitalSaxTests */,
 				4206A6F519BDE99A004399DE /* Frameworks */,
 				4206A6F419BDE99A004399DE /* Products */,
 			);
@@ -99,8 +99,8 @@
 		4206A6F419BDE99A004399DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4206A6F319BDE99A004399DE /* BLESerialSample.app */,
-				4206A71419BDE99A004399DE /* BLESerialSampleTests.xctest */,
+				4206A6F319BDE99A004399DE /* DigitalSax.app */,
+				4206A71419BDE99A004399DE /* DigitalSaxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4206A6FC19BDE99A004399DE /* BLESerialSample */ = {
+		4206A6FC19BDE99A004399DE /* DigitalSax */ = {
 			isa = PBXGroup;
 			children = (
 				4206A70519BDE99A004399DE /* AppDelegate.h */,
@@ -127,33 +127,35 @@
 				4206A70E19BDE99A004399DE /* Images.xcassets */,
 				4206A6FD19BDE99A004399DE /* Supporting Files */,
 			);
+			name = DigitalSax;
 			path = BLESerialSample;
 			sourceTree = "<group>";
 		};
 		4206A6FD19BDE99A004399DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4206A6FE19BDE99A004399DE /* BLESerialSample-Info.plist */,
+				4206A6FE19BDE99A004399DE /* DigitalSax-Info.plist */,
 				4206A6FF19BDE99A004399DE /* InfoPlist.strings */,
 				4206A70219BDE99A004399DE /* main.m */,
-				4206A70419BDE99A004399DE /* BLESerialSample-Prefix.pch */,
+				4206A70419BDE99A004399DE /* DigitalSax-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4206A71B19BDE99A004399DE /* BLESerialSampleTests */ = {
+		4206A71B19BDE99A004399DE /* DigitalSaxTests */ = {
 			isa = PBXGroup;
 			children = (
 				4206A72119BDE99A004399DE /* BLESerialSampleTests.m */,
 				4206A71C19BDE99A004399DE /* Supporting Files */,
 			);
+			name = DigitalSaxTests;
 			path = BLESerialSampleTests;
 			sourceTree = "<group>";
 		};
 		4206A71C19BDE99A004399DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4206A71D19BDE99A004399DE /* BLESerialSampleTests-Info.plist */,
+				4206A71D19BDE99A004399DE /* DigitalSaxTests-Info.plist */,
 				4206A71E19BDE99A004399DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -173,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4206A6F219BDE99A004399DE /* BLESerialSample */ = {
+		4206A6F219BDE99A004399DE /* DigitalSax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4206A72519BDE99A004399DE /* Build configuration list for PBXNativeTarget "BLESerialSample" */;
+			buildConfigurationList = 4206A72519BDE99A004399DE /* Build configuration list for PBXNativeTarget "DigitalSax" */;
 			buildPhases = (
 				4206A6EF19BDE99A004399DE /* Sources */,
 				4206A6F019BDE99A004399DE /* Frameworks */,
@@ -185,14 +187,14 @@
 			);
 			dependencies = (
 			);
-			name = BLESerialSample;
+			name = DigitalSax;
 			productName = BLESerialSample;
-			productReference = 4206A6F319BDE99A004399DE /* BLESerialSample.app */;
+			productReference = 4206A6F319BDE99A004399DE /* DigitalSax.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4206A71319BDE99A004399DE /* BLESerialSampleTests */ = {
+		4206A71319BDE99A004399DE /* DigitalSaxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4206A72819BDE99A004399DE /* Build configuration list for PBXNativeTarget "BLESerialSampleTests" */;
+			buildConfigurationList = 4206A72819BDE99A004399DE /* Build configuration list for PBXNativeTarget "DigitalSaxTests" */;
 			buildPhases = (
 				4206A71019BDE99A004399DE /* Sources */,
 				4206A71119BDE99A004399DE /* Frameworks */,
@@ -203,9 +205,9 @@
 			dependencies = (
 				4206A71A19BDE99A004399DE /* PBXTargetDependency */,
 			);
-			name = BLESerialSampleTests;
+			name = DigitalSaxTests;
 			productName = BLESerialSampleTests;
-			productReference = 4206A71419BDE99A004399DE /* BLESerialSampleTests.xctest */;
+			productReference = 4206A71419BDE99A004399DE /* DigitalSaxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4206A6EE19BDE99A004399DE /* Build configuration list for PBXProject "BLESerialSample" */;
+			buildConfigurationList = 4206A6EE19BDE99A004399DE /* Build configuration list for PBXProject "DigitalSax" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,8 +237,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4206A6F219BDE99A004399DE /* BLESerialSample */,
-				4206A71319BDE99A004399DE /* BLESerialSampleTests */,
+				4206A6F219BDE99A004399DE /* DigitalSax */,
+				4206A71319BDE99A004399DE /* DigitalSaxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +290,7 @@
 /* Begin PBXTargetDependency section */
 		4206A71A19BDE99A004399DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4206A6F219BDE99A004399DE /* BLESerialSample */;
+			target = 4206A6F219BDE99A004399DE /* DigitalSax */;
 			targetProxy = 4206A71919BDE99A004399DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,9 +399,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BLESerialSample/BLESerialSample-Prefix.pch";
-				INFOPLIST_FILE = "BLESerialSample/BLESerialSample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BLESerialSample/DigitalSax-Prefix.pch";
+				INFOPLIST_FILE = "BLESerialSample/DigitalSax-Info.plist";
+				PRODUCT_NAME = DigitalSax;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,9 +412,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BLESerialSample/BLESerialSample-Prefix.pch";
-				INFOPLIST_FILE = "BLESerialSample/BLESerialSample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BLESerialSample/DigitalSax-Prefix.pch";
+				INFOPLIST_FILE = "BLESerialSample/DigitalSax-Info.plist";
+				PRODUCT_NAME = DigitalSax;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -432,8 +434,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BLESerialSampleTests/BLESerialSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BLESerialSampleTests/DigitalSaxTests-Info.plist";
+				PRODUCT_NAME = DigitalSaxTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -450,8 +452,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLESerialSample/BLESerialSample-Prefix.pch";
-				INFOPLIST_FILE = "BLESerialSampleTests/BLESerialSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BLESerialSampleTests/DigitalSaxTests-Info.plist";
+				PRODUCT_NAME = DigitalSaxTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -460,7 +462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4206A6EE19BDE99A004399DE /* Build configuration list for PBXProject "BLESerialSample" */ = {
+		4206A6EE19BDE99A004399DE /* Build configuration list for PBXProject "DigitalSax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4206A72319BDE99A004399DE /* Debug */,
@@ -469,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4206A72519BDE99A004399DE /* Build configuration list for PBXNativeTarget "BLESerialSample" */ = {
+		4206A72519BDE99A004399DE /* Build configuration list for PBXNativeTarget "DigitalSax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4206A72619BDE99A004399DE /* Debug */,
@@ -478,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4206A72819BDE99A004399DE /* Build configuration list for PBXNativeTarget "BLESerialSampleTests" */ = {
+		4206A72819BDE99A004399DE /* Build configuration list for PBXNativeTarget "DigitalSaxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4206A72919BDE99A004399DE /* Debug */,

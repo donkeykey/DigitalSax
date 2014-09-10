@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4206A6F219BDE99A004399DE"
-               BuildableName = "BLESerialSample.app"
-               BlueprintName = "BLESerialSample"
-               ReferencedContainer = "container:BLESerialSample.xcodeproj">
+               BuildableName = "DigitalSax.app"
+               BlueprintName = "DigitalSax"
+               ReferencedContainer = "container:DigitalSax.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4206A71319BDE99A004399DE"
-               BuildableName = "BLESerialSampleTests.xctest"
-               BlueprintName = "BLESerialSampleTests"
-               ReferencedContainer = "container:BLESerialSample.xcodeproj">
+               BuildableName = "DigitalSaxTests.xctest"
+               BlueprintName = "DigitalSaxTests"
+               ReferencedContainer = "container:DigitalSax.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4206A6F219BDE99A004399DE"
-            BuildableName = "BLESerialSample.app"
-            BlueprintName = "BLESerialSample"
-            ReferencedContainer = "container:BLESerialSample.xcodeproj">
+            BuildableName = "DigitalSax.app"
+            BlueprintName = "DigitalSax"
+            ReferencedContainer = "container:DigitalSax.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4206A6F219BDE99A004399DE"
-            BuildableName = "BLESerialSample.app"
-            BlueprintName = "BLESerialSample"
-            ReferencedContainer = "container:BLESerialSample.xcodeproj">
+            BuildableName = "DigitalSax.app"
+            BlueprintName = "DigitalSax"
+            ReferencedContainer = "container:DigitalSax.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4206A6F219BDE99A004399DE"
-            BuildableName = "BLESerialSample.app"
-            BlueprintName = "BLESerialSample"
-            ReferencedContainer = "container:BLESerialSample.xcodeproj">
+            BuildableName = "DigitalSax.app"
+            BlueprintName = "DigitalSax"
+            ReferencedContainer = "container:DigitalSax.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
