@@ -28,5 +28,6 @@
 - (void) sendStr:(NSString *) c;
 
 @property (nonatomic,assign) id<BLESerialManagerDelegate> delegate;
+@property (nonatomic,retain) NSString *all_buff;
 
 @end

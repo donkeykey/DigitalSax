@@ -21,6 +21,8 @@
 		4206A71819BDE99A004399DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206A6FA19BDE99A004399DE /* UIKit.framework */; };
 		4206A72019BDE99A004399DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4206A71E19BDE99A004399DE /* InfoPlist.strings */; };
 		4206A72219BDE99A004399DE /* BLESerialSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4206A72119BDE99A004399DE /* BLESerialSampleTests.m */; };
+		4256975C19C898C00048848D /* C.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4256975B19C898C00048848D /* C.aiff */; };
+		4256976019C899700048848D /* OpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4256975F19C899700048848D /* OpenALManager.m */; };
 		42F5F55F19BE08360008BE06 /* BLESerialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F5F55B19BE08360008BE06 /* BLESerialManager.m */; };
 		42F5F56019BE08360008BE06 /* BLEBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F5F55E19BE08360008BE06 /* BLEBaseClass.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,9 @@
 		4206A71D19BDE99A004399DE /* DigitalSaxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalSaxTests-Info.plist"; sourceTree = "<group>"; };
 		4206A71F19BDE99A004399DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4206A72119BDE99A004399DE /* BLESerialSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLESerialSampleTests.m; sourceTree = "<group>"; };
+		4256975B19C898C00048848D /* C.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = C.aiff; path = BLESerialSample/C.aiff; sourceTree = "<group>"; };
+		4256975E19C899700048848D /* OpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenALManager.h; sourceTree = "<group>"; };
+		4256975F19C899700048848D /* OpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenALManager.m; sourceTree = "<group>"; };
 		42F5F55B19BE08360008BE06 /* BLESerialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLESerialManager.m; path = BLESerialSample/BLESerialManager.m; sourceTree = "<group>"; };
 		42F5F55C19BE08360008BE06 /* BLESerialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLESerialManager.h; path = BLESerialSample/BLESerialManager.h; sourceTree = "<group>"; };
 		42F5F55D19BE08360008BE06 /* BLEBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEBaseClass.h; path = BLESerialSample/BLEBaseClass.h; sourceTree = "<group>"; };
@@ -93,6 +98,7 @@
 				4206A71B19BDE99A004399DE /* DigitalSaxTests */,
 				4206A6F519BDE99A004399DE /* Frameworks */,
 				4206A6F419BDE99A004399DE /* Products */,
+				4256975D19C898CA0048848D /* Sounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +127,8 @@
 			children = (
 				4206A70519BDE99A004399DE /* AppDelegate.h */,
 				4206A70619BDE99A004399DE /* AppDelegate.m */,
+				4256975E19C899700048848D /* OpenALManager.h */,
+				4256975F19C899700048848D /* OpenALManager.m */,
 				4206A70819BDE99A004399DE /* Main.storyboard */,
 				4206A70B19BDE99A004399DE /* ViewController.h */,
 				4206A70C19BDE99A004399DE /* ViewController.m */,
@@ -159,6 +167,14 @@
 				4206A71E19BDE99A004399DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4256975D19C898CA0048848D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4256975B19C898C00048848D /* C.aiff */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		42F5F56119BE09260008BE06 /* BLELibraly */ = {
@@ -249,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4206A70F19BDE99A004399DE /* Images.xcassets in Resources */,
+				4256975C19C898C00048848D /* C.aiff in Resources */,
 				4206A70119BDE99A004399DE /* InfoPlist.strings in Resources */,
 				4206A70A19BDE99A004399DE /* Main.storyboard in Resources */,
 			);
@@ -273,6 +290,7 @@
 				4206A70719BDE99A004399DE /* AppDelegate.m in Sources */,
 				42F5F56019BE08360008BE06 /* BLEBaseClass.m in Sources */,
 				4206A70319BDE99A004399DE /* main.m in Sources */,
+				4256976019C899700048848D /* OpenALManager.m in Sources */,
 				42F5F55F19BE08360008BE06 /* BLESerialManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,12 +42,25 @@
 }
 
 - (void) onReceiveData:(NSString *)data {
+    NSLog(@"data:%@",data);
+    NSArray *array = [data componentsSeparatedByString:@","];
+    self.breath = [[array objectAtIndex:0] intValue];
+    if (self.breath != self.tmpBreath) {
+        if (self.breath) {
+            //start sound
+        } else {
+            //stop sound
+        }
+    }
+    self.tmpBreath = self.breath;
+    /*
     if ( [data intValue] > 200 ) {
         NSLog(@"on");
         self.myview.backgroundColor = [UIColor redColor];
     } else {
         self.myview.backgroundColor = [UIColor whiteColor];
     }
+     */
 }
 
 @end

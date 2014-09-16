@@ -13,5 +13,7 @@
     
 }
 @property (weak, nonatomic) IBOutlet UIButton *connectBtn;
+@property (nonatomic, assign) Boolean breath;
+@property (nonatomic, assign) Boolean tmpBreath;
 
 @end

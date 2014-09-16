@@ -19,6 +19,7 @@ static BLESerialManager *manager = nil;
 
 @implementation BLESerialManager
 @synthesize delegate;
+@synthesize all_buff;
 
 + (BLESerialManager *) sharedManager{
     if (manager == nil) {
@@ -33,6 +34,7 @@ static BLESerialManager *manager = nil;
 	//	周りのBLEデバイスからのadvertise情報のスキャンを開始する
 	[_BaseClass scanDevices:nil];
 	_Device = 0;
+    self.all_buff = @"";
 }
 //------------------------------------------------------------------------------------------
 //	readもしくはindicateもしくはnotifyにてキャラクタリスティックの値を読み込んだ時に呼ばれる
@@ -54,12 +56,33 @@ static BLESerialManager *manager = nil;
         //Device->iPhone
 		CBCharacteristic*	tx = [_Device getCharacteristic:UUID_VSP_SERVICE characteristic:UUID_TX];
 		if (characteristic == tx)	{
-//            NSLog(@"Receive value=%@",characteristic.value);
+            //NSLog(@"Receive value=%@",characteristic.value);
             uint8_t*	buf = (uint8_t*)[characteristic.value bytes]; //bufに結果が入る
-            //_textField.text = [NSString stringWithFormat:@"%d", buf[0]];
-            if ([self.delegate respondsToSelector:@selector(onReceiveData:)]) {
-                [self.delegate onReceiveData:[NSString stringWithUTF8String:(char *)buf]];
+            NSString *str = [NSString stringWithUTF8String:(char *)buf];
+            str = [(NSString*)str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            NSString *substr;
+            if (str.length > 0){
+                substr = [str substringFromIndex:str.length - 1];
+            } else {
+                substr = @"a";
             }
+            if (str != nil) {
+                self.all_buff = [self.all_buff stringByAppendingString:str];
+            } else {
+                self.all_buff = str;
+            }
+            if ([substr isEqualToString:@"#"]) {
+                if (self.all_buff.length > 0 && self.all_buff.length < 30) {
+                    if ([self.delegate respondsToSelector:@selector(onReceiveData:)]) {
+                        self.all_buff = [self.all_buff stringByReplacingOccurrencesOfString:@"#" withString:@""];
+                        [self.delegate onReceiveData:self.all_buff];
+                    }
+                }
+                self.all_buff = @"";
+            }
+            
+            //_textField.text = [NSString stringWithFormat:@"%d", buf[0]];
+            //}
              
 			return;
 		}
